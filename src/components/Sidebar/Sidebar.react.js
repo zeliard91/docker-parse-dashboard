@@ -23,6 +23,8 @@ const Sidebar = ({
   sections,
   section,
   appSelector,
+  primaryBackgroundColor,
+  secondaryBackgroundColor
 }) => {
   const _subMenu = subsections => {
     if (!subsections) {
@@ -70,16 +72,19 @@ const Sidebar = ({
             icon={icon}
             style={style}
             link={prefix + link}
-            active={active}>
+            active={active}
+            primaryBackgroundColor={primaryBackgroundColor}
+            secondaryBackgroundColor={secondaryBackgroundColor}
+            >
             {active ? _subMenu(subsections) : null}
           </SidebarSection>
         );
       })}
     </div>
     <div className={styles.footer}>
-      <a href='https://parseplatform.github.io'>Open Source</a>
-      <a href='https://www.parse.com/docs'>Docs</a>
-      <a href='https://www.parse.com/downloads'>Downloads</a>
+      <a target='_blank' href='http://parseplatform.org/'>Open Source Hub</a>
+      <a target='_blank' href='https://github.com/parse-community'>GitHub</a>
+      <a target='_blank' href='http://docs.parseplatform.org/'>Docs</a>
       <FooterMenu />
     </div>
   </div>

@@ -5,6 +5,7 @@ PIG/bundles/
 Parse-Dashboard/public/bundles/
 Parse-Dashboard/parse-dashboard-config.json
 npm-debug.log
+.eslintcache
 
 // vim .swp
 *.swp
@@ -14,3 +15,4 @@ npm-debug.log
 account_key.json
 *.key
 *.crt
+.idea/
